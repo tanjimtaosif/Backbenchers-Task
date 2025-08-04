@@ -10,6 +10,7 @@
     margin: auto;
 }
 
+/* Navbar */
 .navbar-container {
     background-color: #FFFFFF;
     width: 100%;
@@ -81,6 +82,7 @@
     background-color: #e65c00;
 }
 
+/* Hero Section */
 .hero-section-container {
     margin: auto;
     background-image: url(./assets/hero-img.png);
@@ -102,6 +104,7 @@
     margin-bottom: 15px;
 }
 
+/* Customer Insight */
 .customer-insight {
     display: flex;
     align-items: center;
@@ -152,9 +155,10 @@
     flex-direction: column;
 }
 
-/* Products Section */
+/* Product Section Container */
 .product-section-container {
     margin-top: 80px;
+    margin-bottom: 80px;
     display: flex;
     justify-content: space-between;
     gap: 64px;
@@ -168,19 +172,20 @@
 
 .display-product {
     width: 569px;
+    min-width: 569px;
     height: 605px;
+    min-height: 605px;
     border-radius: 25px;
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .display-product img {
     width: 100%;
+    min-width: 569px;
     height: 100%;
+    min-height: 605px;
     object-fit: cover;
-    display: block;
+    object-position: center;
 }
 
 .display-product-featured {
@@ -188,8 +193,19 @@
     justify-content: space-between;
 }
 
+.review p:nth-of-type(1) {
+    font-weight: 600;
+}
+
 .product-details {
     margin-bottom: 24px;
+}
+
+.product-details .review {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
 }
 
 .product-details .price {
@@ -224,17 +240,10 @@
     border-radius: 5px;
 }
 
+/* Description Section */
 .description p:nth-child(1) {
     font-size: 32px;
     font-weight: 600;
-    margin-bottom: 12px;
-
-}
-
-.product-details .review {
-    display: flex;
-    align-items: center;
-    gap: 12px;
     margin-bottom: 12px;
 }
 
@@ -244,12 +253,7 @@
     gap: 100px;
 }
 
-.description-list-1 {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
+.description-list-1,
 .description-list-2 {
     display: flex;
     flex-direction: column;
@@ -269,6 +273,7 @@
     height: 20px;
 }
 
+/*  Add to Cart */
 .add-cart {
     margin-top: 24px;
 }
@@ -282,12 +287,19 @@
     margin-bottom: 24px;
 }
 
+/*  Payment Options */
 .payment-option {
     display: flex;
     gap: 24px;
     margin-bottom: 24px;
 }
 
+.payment-option img.selected {
+    border: 3px solid #ff6600;
+    border-radius: 8px;
+}
+
+/* Dropdown Section */
 .drop-down-container ul {
     list-style: none;
     padding: 0;
