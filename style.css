@@ -73,9 +73,12 @@
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+.btn:hover {
+    background-color: #e65c00;
+}
+
 .button-container .btn:hover {
     background-color: #e65c00;
-    transform: translateY(-2px);
 }
 
 .hero-section-container {
@@ -301,4 +304,3 @@
     justify-content: space-between;
     align-items: center;
 }
-
