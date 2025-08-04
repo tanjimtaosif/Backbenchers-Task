@@ -45,3 +45,20 @@ addToCartBtn.addEventListener('click', () => {
     const paymentMethod = selectedPayment.getAttribute('data-method');
     alert(`Item added to cart!\nPayment Method Selected: ${paymentMethod}`);
 });
+
+// Drop down section effect
+document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', () => {
+        const menu = toggle.nextElementSibling;
+
+        document.querySelectorAll('.dropdown-menu').forEach(m => {
+            if (m !== menu) {
+                m.classList.remove('show');
+                m.previousElementSibling.classList.remove('active');
+            }
+        });
+
+        menu.classList.toggle('show');
+        toggle.classList.toggle('active');
+    });
+});
